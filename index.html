@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-nav">
+      <div class="music-list">
+        <div class="music-banner coldplay-1">
+          <img src="./img/coldplay.jpg" alt="coldplay-1" />
+          <div class="text">
+            <h3>Sparks</h3>
+            <p>Coldplay</p>
+          </div>
+        </div>
+        <div class="music-banner coldplay-2">
+          <img src="./img/coldplay-2.jpg" alt="coldplay-2" />
+          <div class="text">
+            <h3>Viva la vida</h3>
+            <p>Coldplay</p>
+          </div>
+        </div>
+        <div class="music-banner boypablo">
+          <img src="./img/boypablo.jpg" alt="boypablo" />
+          <div class="text">
+            <h3>Sickfeeling</h3>
+            <p>Boy Pablo</p>
+          </div>
+        </div>
+        <div class="music-banner olivia">
+          <img src="./img/olivia.jpg" alt="olivia" />
+          <div class="text">
+            <h3>Traitor</h3>
+            <p>Olivia Rodrigo</p>
+          </div>
+        </div>
+        <div class="music-banner acdc">
+          <img src="./img/acdc.jpg" alt="acdc" />
+          <div class="text">
+            <h3>Shot In The Dark</h3>
+            <p>AC/DC</p>
+          </div>
+        </div>
+        <div class="music-banner ardito">
+          <img src="./img/ardito.jpg" alt="ardito" />
+          <div class="text">
+            <h3>Sudah</h3>
+            <p>Ardhito Pramono</p>
+          </div>
+        </div>
+        <div class="music-banner queen">
+          <img src="./img/queen.jpg" alt="queen" />
+          <div class="text">
+            <h3>Bohemian Rhapsody</h3>
+            <p>Queen</p>
+          </div>
+        </div>
+        <div class="music-banner kodaline">
+          <img src="./img/kodaline .jpg" alt="kodaline" />
+          <div class="text">
+            <h3>High Hopes</h3>
+            <p>Kodaline</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-toggle">
+      <input type="checkbox" />
+      <span class="menu-1"></span>
+      <span class="menu-2"></span>
+      <span class="menu-3"></span>
+    </div>
+    <div class="music-player">
+      <div class="album">
+        <img src="./img/coldplay.jpg" #song-img />
+      </div>
+      <div class="album-title">
+        <h3 id="song-name">Sparks</h3>
+        <p id="artist">Coldplay</p>
+      </div>
+      <div class="player">
+        <button id="shuffle">
+          <i class="fa-solid fa-shuffle"></i>
+        </button>
+        <button id="prev">
+          <i class="fa-solid fa-backward-step"></i>
+        </button>
+        <button id="play">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" class="hide">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-forward-step"></i>
+        </button>
+        <button id="repeat">
+          <i class="fa-solid fa-repeat"></i>
+        </button>
+      </div>
+      <audio id="audio" preload="metadata"></audio>
+      <div class="bar" id="progress-bar">
+        <div id="current"></div>
+      </div>
+      <div id="time">
+        <span id="current-time">0:00</span>
+        <span id="ending">0:00</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
